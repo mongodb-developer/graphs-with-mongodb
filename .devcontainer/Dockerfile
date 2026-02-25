@@ -1,18 +1,9 @@
 FROM jupyter/base-notebook:latest
 
-USER root
+# Install Node.js 20 via conda-forge (avoids requiring curl or external apt repos)
+RUN mamba install -y -c conda-forge nodejs=20 \
+    && mamba clean --all -y
 
-# Install Node.js 20.x
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install tslab globally
-RUN npm install -g tslab
-
-# Switch back to the default Jupyter user
-USER ${NB_UID}
-
-# Register TypeScript and JavaScript kernels for this user
-RUN tslab install --python=python3
+# Install tslab globally and register TypeScript and JavaScript kernels
+RUN npm install -g tslab \
+    && tslab install --python=python3
