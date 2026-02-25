@@ -1,0 +1,12 @@
+{
+    "mdb.presetConnections": [
+        {
+            "name": "Local MongoDB Atlas",
+            "connectionString": "mongodb://admin:mongodb@localhost:27017/?directConnection=true"
+        }
+    ],
+    "mdb.showOverviewPageAfterInstall": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    }
+}

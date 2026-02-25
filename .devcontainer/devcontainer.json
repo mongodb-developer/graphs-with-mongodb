@@ -16,13 +16,6 @@
     },
     "postCreateCommand": "npm install && node .devcontainer/seed.js",
     "customizations": {
-        "codespaces": {
-            "openFiles": [
-                "lab/01_graph_pattern.ipynb",
-                "lab/02_tree_pattern.ipynb",
-                "lab/03_single_collection.ipynb"
-            ]
-        },
         "vscode": {
             "extensions": [
                 "ms-toolsai.jupyter",

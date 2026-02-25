@@ -9,6 +9,7 @@ yarn-error.log*
 .pnp.js
 
 .vscode/*
+!.vscode/settings.json
 .idea
 
 /assets
