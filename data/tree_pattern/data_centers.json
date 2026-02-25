@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "dc1",
+    "name": "Data Center West",
+    "location": "San Jose, CA",
+    "features": ["Tier III certified", "24/7 staffing", "Redundant power"],
+    "connected_datacenters": ["dc2", "dc3"],
+    "ancestors": []
+  },
+  {
+    "_id": "dc2",
+    "name": "Data Center South",
+    "location": "Los Angeles, CA",
+    "features": ["Tier III certified", "On-site security", "25GbE uplink"],
+    "connected_datacenters": ["dc1", "dc4"],
+    "ancestors": []
+  },
+  {
+    "_id": "dc3",
+    "name": "Data Center North",
+    "location": "Seattle, WA",
+    "features": ["Tier II certified", "24/7 staffing", "UPS backup"],
+    "connected_datacenters": ["dc1", "dc4"],
+    "ancestors": []
+  },
+  {
+    "_id": "dc4",
+    "name": "Data Center Central",
+    "location": "Denver, CO",
+    "features": ["Tier III certified", "Redundant power", "Fire suppression"],
+    "connected_datacenters": ["dc2", "dc3", "dc5"],
+    "ancestors": []
+  },
+  {
+    "_id": "dc5",
+    "name": "Data Center East",
+    "location": "Dallas, TX",
+    "features": ["Tier IV certified", "24/7 staffing", "Biometric access"],
+    "connected_datacenters": ["dc4"],
+    "ancestors": []
+  }
+]

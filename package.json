@@ -1,0 +1,17 @@
+{
+  "name": "graphs-mongodb",
+  "version": "1.0.0",
+  "description": "MongoDB Graph Patterns Lab",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}

@@ -1,0 +1,33 @@
+{
+    "name": "MongoDB Graph Patterns Lab",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "lab-runner",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "forwardPorts": [
+        8888,
+        27017
+    ],
+    "hostRequirements": {
+        "cpus": 4
+    },
+    "containerEnv": {
+        "MONGODB_URI": "mongodb://admin:mongodb@localhost:27017/",
+        "NODE_PATH": "/workspaces/${localWorkspaceFolderBasename}/node_modules"
+    },
+    "postCreateCommand": "npm install && node .devcontainer/seed.js",
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "lab/01_graph_pattern.ipynb",
+                "lab/02_tree_pattern.ipynb",
+                "lab/03_single_collection.ipynb"
+            ]
+        },
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "mongodb.mongodb-vscode"
+            ]
+        }
+    }
+}

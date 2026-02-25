@@ -1,0 +1,17 @@
+[
+  { "_id": "nc1",  "serial_number": "NC-10001", "router": "r1",  "location": "San Jose, CA",    "features": ["10GbE", "SR-IOV", "Low Latency"],    "port_count": 4, "speed_gbps": 10,  "ancestors": ["dc1", "r1"]  },
+  { "_id": "nc2",  "serial_number": "NC-10002", "router": "r1",  "location": "San Jose, CA",    "features": ["25GbE", "RDMA"],                     "port_count": 2, "speed_gbps": 25,  "ancestors": ["dc1", "r1"]  },
+  { "_id": "nc3",  "serial_number": "NC-10003", "router": "r2",  "location": "San Jose, CA",    "features": ["10GbE", "SR-IOV"],                   "port_count": 4, "speed_gbps": 10,  "ancestors": ["dc1", "r2"]  },
+  { "_id": "nc4",  "serial_number": "NC-10004", "router": "r3",  "location": "Los Angeles, CA", "features": ["100GbE", "DPDK"],                    "port_count": 2, "speed_gbps": 100, "ancestors": ["dc2", "r3"]  },
+  { "_id": "nc5",  "serial_number": "NC-10005", "router": "r3",  "location": "Los Angeles, CA", "features": ["25GbE", "RDMA", "SR-IOV"],           "port_count": 4, "speed_gbps": 25,  "ancestors": ["dc2", "r3"]  },
+  { "_id": "nc6",  "serial_number": "NC-10006", "router": "r4",  "location": "Los Angeles, CA", "features": ["10GbE", "Low Latency"],              "port_count": 8, "speed_gbps": 10,  "ancestors": ["dc2", "r4"]  },
+  { "_id": "nc7",  "serial_number": "NC-10007", "router": "r5",  "location": "Seattle, WA",     "features": ["25GbE", "IPv6 offload"],             "port_count": 2, "speed_gbps": 25,  "ancestors": ["dc3", "r5"]  },
+  { "_id": "nc8",  "serial_number": "NC-10008", "router": "r5",  "location": "Seattle, WA",     "features": ["100GbE", "DPDK", "SR-IOV"],          "port_count": 2, "speed_gbps": 100, "ancestors": ["dc3", "r5"]  },
+  { "_id": "nc9",  "serial_number": "NC-10009", "router": "r6",  "location": "Seattle, WA",     "features": ["10GbE", "QoS offload"],              "port_count": 4, "speed_gbps": 10,  "ancestors": ["dc3", "r6"]  },
+  { "_id": "nc10", "serial_number": "NC-10010", "router": "r7",  "location": "Denver, CO",      "features": ["25GbE", "RDMA"],                     "port_count": 4, "speed_gbps": 25,  "ancestors": ["dc4", "r7"]  },
+  { "_id": "nc11", "serial_number": "NC-10011", "router": "r7",  "location": "Denver, CO",      "features": ["10GbE", "SR-IOV"],                   "port_count": 8, "speed_gbps": 10,  "ancestors": ["dc4", "r7"]  },
+  { "_id": "nc12", "serial_number": "NC-10012", "router": "r8",  "location": "Denver, CO",      "features": ["100GbE", "DPDK"],                    "port_count": 2, "speed_gbps": 100, "ancestors": ["dc4", "r8"]  },
+  { "_id": "nc13", "serial_number": "NC-10013", "router": "r9",  "location": "Dallas, TX",      "features": ["25GbE", "RDMA", "SR-IOV"],           "port_count": 4, "speed_gbps": 25,  "ancestors": ["dc5", "r9"]  },
+  { "_id": "nc14", "serial_number": "NC-10014", "router": "r9",  "location": "Dallas, TX",      "features": ["10GbE", "Low Latency"],              "port_count": 4, "speed_gbps": 10,  "ancestors": ["dc5", "r9"]  },
+  { "_id": "nc15", "serial_number": "NC-10015", "router": "r10", "location": "Dallas, TX",      "features": ["25GbE", "QoS offload"],              "port_count": 2, "speed_gbps": 25,  "ancestors": ["dc5", "r10"] }
+]

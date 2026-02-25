@@ -1,0 +1,12 @@
+[
+  { "_id": "r1",  "hostname": "router-west-1", "data_center": "dc1", "location": "San Jose, CA",    "features": ["BGP", "IPv6", "QoS"],           "connected_routers": ["r2", "r3", "r5"], "ancestors": ["dc1"] },
+  { "_id": "r2",  "hostname": "router-west-2", "data_center": "dc1", "location": "San Jose, CA",    "features": ["BGP", "OSPF", "Low Latency"],   "connected_routers": ["r1", "r4"],       "ancestors": ["dc1"] },
+  { "_id": "r3",  "hostname": "router-la-1",   "data_center": "dc2", "location": "Los Angeles, CA", "features": ["MPLS", "BGP", "IPv6"],          "connected_routers": ["r1", "r4", "r6"], "ancestors": ["dc2"] },
+  { "_id": "r4",  "hostname": "router-la-2",   "data_center": "dc2", "location": "Los Angeles, CA", "features": ["MPLS", "QoS", "OSPF"],          "connected_routers": ["r2", "r3", "r7"], "ancestors": ["dc2"] },
+  { "_id": "r5",  "hostname": "router-sea-1",  "data_center": "dc3", "location": "Seattle, WA",     "features": ["BGP", "IPv6", "OSPF"],          "connected_routers": ["r1", "r6", "r8"], "ancestors": ["dc3"] },
+  { "_id": "r6",  "hostname": "router-sea-2",  "data_center": "dc3", "location": "Seattle, WA",     "features": ["OSPF", "Low Latency", "MPLS"],  "connected_routers": ["r3", "r5", "r9"], "ancestors": ["dc3"] },
+  { "_id": "r7",  "hostname": "router-den-1",  "data_center": "dc4", "location": "Denver, CO",      "features": ["BGP", "OSPF", "IPv6"],          "connected_routers": ["r4", "r8", "r10"],"ancestors": ["dc4"] },
+  { "_id": "r8",  "hostname": "router-den-2",  "data_center": "dc4", "location": "Denver, CO",      "features": ["MPLS", "QoS", "OSPF"],          "connected_routers": ["r5", "r7", "r9"], "ancestors": ["dc4"] },
+  { "_id": "r9",  "hostname": "router-dal-1",  "data_center": "dc5", "location": "Dallas, TX",      "features": ["BGP", "IPv6", "MPLS"],          "connected_routers": ["r6", "r8", "r10"],"ancestors": ["dc5"] },
+  { "_id": "r10", "hostname": "router-dal-2",  "data_center": "dc5", "location": "Dallas, TX",      "features": ["BGP", "QoS", "Low Latency"],    "connected_routers": ["r7", "r9"],       "ancestors": ["dc5"] }
+]
