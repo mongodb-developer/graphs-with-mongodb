@@ -117,7 +117,7 @@ const DATA = {
 };
 
 async function seed() {
-  const client = new MongoClient(uri);
+  const client = new MongoClient(uri, { appName: 'devrel-github-mongodb-graphs' });
   try {
     await client.connect();
     console.log('Connected to MongoDB.');
